@@ -49,6 +49,29 @@ miCursor=miConexion.cursor()
 # print(productos) <--- IMPRIMIR PARA LEER POR CONSOLA
 
 
+#UPDATE
+
+#--------------------- UPDATE ---------------------
+
+# miCursor.execute("UPDATE PRODUCTOS SET PRECIO=35 WHERE NOMBRE_ARTICULO='PELOTA'")
+
+#NOS ACTUALIZA EL VALOR DE PRECIO DE PELOTA A 35 
+
+
+
+
+#DELETE
+
+#--------------------- DELETE ---------------------
+
+
+
+# miCursor.execute("DELETE FROM PRODUCTOS WHERE ID=4")
+
+#CON ESTO HEMOS BORRADO EL ARTICULO CON EL ID 4 QUE ERA JARRON (ID 4)
+
+#NUNCA OLVIDAR EL WHERE EN UNA CLAUSULA DELETE O ELIMANAREMOS TODA LA INFORMACION DE LA TABLA DE LA BASE DE DATOS (MUY IMPORTANTE) 
+
 miConexion.commit()
 
 miConexion.close()
